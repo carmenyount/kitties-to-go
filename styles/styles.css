@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 60px;
+    padding: 30px;
+    position: relative;
+    max-width: calc(100%-60px);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #404040;
+    background-color:#F0F0F0
+}
+header {
+    padding: 50px 50px 50px 125px;
+    background-color: #0099cc;
+    color: white;
+}
+#topnav {
+    background-color: #F0F0F0;
+    padding: 20px 20px 20px 90px;
+    margin-left: 20px;
+    font-size: .90rem;
+}
+#topnav li {
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+#topnav li::after {
+    content: "/";
+    padding: 12px;
+}
+#topnav li:last-child::after {
+    display: none;
+}
+footer {
+    clear: left;
+    padding: 50px;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+}
+#footernav {
+    padding: 20px;
+    margin-left: 20px;
+    font-size: .90rem;
+    font-weight: bold;
+    color: white;
+}
+#footernav li {
+    display: inline;
+    text-align: center;
+    margin: 0;
+}
+#footernav li::after {
+    content: "/";
+    padding: 12px;
+}
+#footernav li:last-child::after {
+    display: none;
+}
+#main {
+    background-color: white;
+    float: left;
+    width: 60%;
+    padding: 40px 50px 50px 130px;
+}
+aside {
+    background-color: white;
+    float: right;
+    width: 40%;
+    padding: 40px 50px  50px 50px;
+    font-size: .90rem
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+.blue-headline {
+    color: #0099cc;
+}
+h4 {
+    font-size: 1.35rem;
+}
+h5 {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+p {
+    font-size: .85rem;
+    line-height: 1.75rem;
+}
+blockquote {
+    font-size: 1.25rem;
+    color:#0099cc;
+}
+
+#cat-of-the-week {
+    display: block;
+    margin-left: 0;
+}
