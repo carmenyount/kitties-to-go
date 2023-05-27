@@ -60,6 +60,7 @@ footer {
 #footernav li:last-child::after {
     display: none;
 }
+
 #main {
     background-color: white;
     float: left;
@@ -73,6 +74,22 @@ aside {
     padding: 40px 50px  50px 50px;
     font-size: .90rem
 }
+
+/* equal height columns */
+#content {
+    min-height: 300px;
+    display: -webkit-flex; /*Safari */
+    display: flex; /* standard syntax */ 
+}
+#content #main {
+    -webkit-flex: 1;
+    flex: 1;
+}
+#content #sidebar {
+    /* bgcolor? */
+}
+
+
 a {
     text-decoration: none;
 }
