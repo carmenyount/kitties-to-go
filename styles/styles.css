@@ -8,7 +8,6 @@ body {
     max-width: calc(100%-60px);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #404040;
-    background-color:#F0F0F0
 }
 header {
     padding: 50px 50px 50px 125px;
@@ -18,8 +17,14 @@ header {
 #topnav {
     background-color: #F0F0F0;
     padding: 20px 20px 20px 90px;
-    margin-left: 20px;
     font-size: .90rem;
+}
+#topnav a {
+    color: #404040;
+    text-decoration: none;
+}
+#topnav a:hover {
+    color: #0099cc;
 }
 #topnav li {
     display: inline;
@@ -60,12 +65,43 @@ footer {
 #footernav li:last-child::after {
     display: none;
 }
+#footernav a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+#footernav a:hover {
+    color: #0099cc;
+}
+#UW-links {
+    background-color: purple;
+    color: #F0F0F0;
+}
+#UW-links li {
+    display: inline;
+    text-align: center;
+    margin: 0;
+}
+#UW-links a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+#UW-links a:hover {
+    color: gold;
+}
+#UW-links li::after {
+    content: "|";
+    padding: 20px;
+}
+#UW-links li:last-child::after {
+    display: none;
+}
+
 
 #main {
     background-color: white;
     float: left;
     width: 60%;
-    padding: 40px 50px 50px 130px;
+    padding: 60px;
 }
 aside {
     background-color: white;

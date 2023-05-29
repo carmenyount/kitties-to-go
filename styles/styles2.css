@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+    max-width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+    background-image: url(../images/lesson04-footer-image.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+#topnav {
+    text-align: center;
+    padding: 20px 0 20px 0px;
+    background-color: #F0F0F0;
+    font-size: 1.15rem;
+}
+#topnav a {
+    display: inline-block;
+    color: #404040;
+    text-decoration: none;
+}
+#topnav a:hover {
+    color: maroon;
+}
+#topnav li {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+#topnav li::after {
+    content: "/";
+    padding: 12px;
+}
+#topnav li:last-child::after {
+    display: none;
+}
+footer {
+    clear: left;
+    padding: 50px;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+}
+#footernav {
+    padding:20px 0 20px 0;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+#footernav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+#footernav li {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+#footernav li::after {
+    content: "/";
+    padding: 12px;
+}
+#footernav li:last-child::after {
+    display: none;
+}
+#footernav a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+#footernav a:hover {
+    color: lightgray;
+}
+#UW-links {
+    background-color: purple;
+    padding: 25px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+#UW-links li {
+    display: inline;
+    text-align: center;
+    margin: 0;
+}
+#UW-links a {
+    color: white;
+    text-decoration: none;
+}
+#UW-links a:hover {
+    color: gold;
+}
+#UW-links li::after {
+    content: "|";
+    padding: 20px;
+}
+#UW-links li:last-child::after {
+    display: none;
+}
+.floated-elements::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.articles {
+    float: left;
+    width: 50%;
+    padding: 0 60px 60px 60px;
+}
+.cat-feature {
+    float: right;
+    width: 50%;
+    padding: 0 60px 60px 60px;
+    text-align: center;
+}
+/* appearance styles */
+#main {
+    background-color: white;
+    padding: 0 60px 0 60px;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+a:hover {
+    color: maroon;
+}
+h1 {
+    font-size: 5em;
+}
+h3 {
+    font-size: 2.5em;
+}
+.maroon-headline {
+    text-align: center;
+}
+h4 {
+    font-size: 2em;
+}
+h5 {
+    font-size: 1.75em;
+    line-height: 1.75em;
+    color: maroon;
+}
+p {
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
+blockquote {
+    font-size: 1.5em;
+    color:maroon;
+    font-style: italic;
+}
+li {
+    font-size: 1.25em;
+}
+#cat-of-the-week {
+    display: inline;
+    justify-content: center;
+    object-fit: contain;   
+}
+figcaption {
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
