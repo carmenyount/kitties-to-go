@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 body {
-    margin: 60px;
-    padding: 30px;
+    margin: 0 auto;
     position: relative;
-    max-width: calc(100%-60px);
+    width: 75%;
+    max-width: 100%;    
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #404040;
 }
