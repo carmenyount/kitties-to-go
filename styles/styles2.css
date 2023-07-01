@@ -8,6 +8,20 @@ body {
     max-width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.skip-to-main {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: maroon;
+    color: white;
+    opacity: 0;
+}
+.skip-to-main:focus {
+    left: 0%;
+    transform: translateX(-0%);
+    opacity: 1;
+}
 header {
     position: relative;
     margin: 0px;
@@ -31,6 +45,9 @@ header {
     text-decoration: none;
 }
 #topnav a:hover {
+    color: maroon;
+}
+#topnav a:focus {
     color: maroon;
 }
 #topnav li {
@@ -84,6 +101,9 @@ footer {
 #footernav a:hover {
     color: lightgray;
 }
+#footernav a:focus {
+    color: lightpink;
+}
 #UW-links {
     background-color: purple;
     padding: 25px;
@@ -115,17 +135,19 @@ footer {
     clear: both;
     display: table;
 }
-.articles {
-    float: left;
-    width: 50%;
-    padding: 0 60px 60px 60px;
+/* flexbox for aside content */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 50px;
+    padding: 0 15px 30px 15px;
+    margin: 0 50px 0 50px;
 }
-.cat-feature {
-    float: right;
-    width: 50%;
-    padding: 0 60px 60px 60px;
-    text-align: center;
-}
+
 /* appearance styles */
 #main {
     background-color: white;
